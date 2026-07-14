@@ -1,0 +1,25 @@
+@if (lightbox.image(); as image) {
+  <div class="fixed inset-0 z-60 flex items-center justify-center p-6">
+    <button
+      type="button"
+      (click)="lightbox.close()"
+      aria-label="Close"
+      class="absolute inset-0 bg-black/80 backdrop-blur-sm cursor-default"
+    ></button>
+
+    <button
+      type="button"
+      (click)="lightbox.close()"
+      aria-label="Close"
+      class="absolute top-4 right-4 z-10 grid place-items-center size-10 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
+    >
+      <lucide-angular [img]="XIcon" [size]="20" />
+    </button>
+
+    <img
+      [src]="image.src"
+      [alt]="image.alt"
+      class="relative z-10 max-w-full max-h-[85vh] rounded-lg shadow-2xl"
+    />
+  </div>
+}

@@ -1,0 +1,153 @@
+<section id="projetos" class="section-seam py-24 px-6 bg-white dark:bg-[#0f172a]">
+  <div class="max-w-5xl mx-auto">
+    <h2
+      appTitleReveal
+      class="section-title w-fit mx-auto mb-12 text-3xl md:text-4xl font-extrabold tracking-tight bg-linear-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
+      i18n="@@projects.title"
+    >
+      Projetos
+    </h2>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      @for (project of projects; track project.name) {
+        <article
+          appScrollReveal
+          appTilt
+          class="flex flex-col overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-white/5 shadow-sm hover:shadow-[0_0_35px_rgba(99,102,241,0.4)] hover:border-indigo-400 dark:hover:border-indigo-500 transition-shadow"
+        >
+          @if (project.image) {
+            <button
+              type="button"
+              (click)="openImage(project)"
+              [attr.aria-label]="project.name"
+              class="relative group/image w-full aspect-video overflow-hidden"
+            >
+              <img
+                [ngSrc]="project.image"
+                fill=""
+                [alt]="project.name + ' — ' + previewAlt"
+                class="object-cover transition-transform group-hover/image:scale-105"
+              />
+              <span
+                class="absolute inset-0 flex items-center justify-center bg-black/0 group-hover/image:bg-black/40 transition-colors"
+              >
+                <lucide-angular
+                  [img]="Maximize2Icon"
+                  [size]="24"
+                  class="text-white opacity-0 group-hover/image:opacity-100 transition-opacity"
+                />
+              </span>
+            </button>
+          } @else {
+            <div
+              class="w-full aspect-video flex items-center justify-center bg-linear-to-br from-indigo-500/10 to-purple-500/10"
+            >
+              <span
+                class="grid place-items-center size-14 rounded-xl text-white bg-linear-to-br from-indigo-500 to-purple-500"
+              >
+                <lucide-angular [img]="Code2Icon" [size]="24" />
+              </span>
+            </div>
+          }
+
+          <div class="flex flex-col flex-1 p-6">
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white">
+              {{ project.name }}
+            </h3>
+
+            <div
+              class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 mb-3 text-xs text-slate-400 dark:text-slate-500"
+            >
+              <span class="inline-flex items-center gap-1">
+                <lucide-angular [img]="CalendarIcon" [size]="12" />
+                {{ project.period }}
+              </span>
+              @if (project.company) {
+                <span class="inline-flex items-center gap-1">
+                  <lucide-angular [img]="Building2Icon" [size]="12" />
+                  {{ project.company }}
+                </span>
+              }
+            </div>
+
+            <p class="text-sm text-slate-600 dark:text-slate-300 flex-1">
+              {{ project.description }}
+            </p>
+
+            <div class="flex flex-wrap gap-1.5 mt-4">
+              @for (tech of project.techStack; track tech) {
+                <span
+                  class="px-2 py-0.5 rounded text-xs font-medium text-indigo-600 dark:text-indigo-300 bg-indigo-500/10"
+                >
+                  {{ tech }}
+                </span>
+              }
+            </div>
+
+            <div class="mt-5 flex items-center gap-4">
+              @if (project.githubUrl) {
+                <a
+                  [href]="project.githubUrl"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 text-sm font-medium text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300 group"
+                >
+                  <app-brand-icon name="github" [size]="16" />
+                  <span i18n="@@projects.githubCta">GitHub</span>
+                  <lucide-angular
+                    [img]="ArrowRightIcon"
+                    [size]="14"
+                    class="transition-transform group-hover:translate-x-0.5"
+                  />
+                </a>
+              }
+
+              @if (project.liveUrl) {
+                <a
+                  [href]="project.liveUrl"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 text-sm font-medium text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300 group"
+                >
+                  <lucide-angular [img]="ExternalLinkIcon" [size]="16" />
+                  <span i18n="@@projects.liveCta">Ver projeto</span>
+                  <lucide-angular
+                    [img]="ArrowRightIcon"
+                    [size]="14"
+                    class="transition-transform group-hover:translate-x-0.5"
+                  />
+                </a>
+              }
+
+              @if (project.appUrl) {
+                <a
+                  [href]="project.appUrl"
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 text-sm font-medium text-indigo-500 dark:text-indigo-400 hover:text-indigo-600 dark:hover:text-indigo-300 group"
+                >
+                  <lucide-angular [img]="MessageCircleIcon" [size]="16" />
+                  <span i18n="@@projects.appCta">Acessar chat</span>
+                  <lucide-angular
+                    [img]="ArrowRightIcon"
+                    [size]="14"
+                    class="transition-transform group-hover:translate-x-0.5"
+                  />
+                </a>
+              }
+
+              @if (project.isPrivate) {
+                <span
+                  class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-400 dark:text-slate-500"
+                >
+                  <lucide-angular [img]="LockIcon" [size]="16" />
+                  <span i18n="@@projects.privateLabel">Projeto privado</span>
+                </span>
+              }
+            </div>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
