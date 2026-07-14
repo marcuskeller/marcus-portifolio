@@ -1,0 +1,73 @@
+<header
+  class="fixed top-0 inset-x-0 z-50 border-b border-slate-200/10 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md"
+>
+  <nav
+    class="w-full px-6 h-16 flex items-center justify-between md:grid md:grid-cols-[1fr_auto_1fr]"
+  >
+    <a
+      href="#top"
+      appSmoothScroll
+      [attr.aria-label]="language.lang() === 'pt' ? 'Voltar ao início' : 'Back to top'"
+      class="grid place-items-center size-9 rounded-lg text-white bg-gradient-to-br from-indigo-500 to-purple-500 md:justify-self-start"
+    >
+      <lucide-angular [img]="LogoIcon" [size]="18" />
+    </a>
+
+    <ul class="hidden md:flex items-center gap-8 md:justify-self-center">
+      @for (link of navLinks(); track link.href) {
+        <li>
+          <a
+            [href]="link.href"
+            appSmoothScroll
+            class="text-sm transition-colors"
+            [class]="
+              isActive(link.href)
+                ? 'text-indigo-500 dark:text-indigo-400 font-semibold'
+                : 'text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400'
+            "
+          >
+            {{ link.label }}
+          </a>
+        </li>
+      }
+    </ul>
+
+    <div class="relative flex items-center gap-2 md:justify-self-end">
+      <app-settings-menu />
+
+      <button
+        type="button"
+        (click)="toggleMenu()"
+        [attr.aria-label]="language.lang() === 'pt' ? 'Abrir menu' : 'Open menu'"
+        [attr.aria-expanded]="isMenuOpen()"
+        class="md:hidden grid place-items-center size-9 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-900/5 dark:hover:bg-white/10 transition-colors"
+      >
+        <lucide-angular [img]="isMenuOpen() ? XIcon : MenuIcon" [size]="20" />
+      </button>
+
+      @if (isMenuOpen()) {
+        <ul
+          class="md:hidden absolute right-0 top-full mt-2 z-50 w-48 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-xl p-2 flex flex-col gap-1"
+        >
+          @for (link of navLinks(); track link.href) {
+            <li>
+              <a
+                [href]="link.href"
+                appSmoothScroll
+                (click)="closeMenu()"
+                class="block px-3 py-2 rounded-lg text-sm transition-colors"
+                [class]="
+                  isActive(link.href)
+                    ? 'text-indigo-500 dark:text-indigo-400 font-semibold bg-indigo-500/10'
+                    : 'text-slate-600 dark:text-slate-300 hover:text-indigo-500 dark:hover:text-indigo-400 hover:bg-slate-900/5 dark:hover:bg-white/10'
+                "
+              >
+                {{ link.label }}
+              </a>
+            </li>
+          }
+        </ul>
+      }
+    </div>
+  </nav>
+</header>

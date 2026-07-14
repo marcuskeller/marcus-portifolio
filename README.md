@@ -1,59 +1,63 @@
-# MarcusPortifolio
+# Marcus Dev — Portfólio Pessoal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.6.
+Portfólio pessoal de **Marcus Dev**, Full Stack Developer, construído com Angular 22 e Tailwind CSS 4. Apresenta projetos, experiência profissional, formação acadêmica e formas de contato.
 
-## Development server
+🔗 GitHub: [github.com/marcuskeller](https://github.com/marcuskeller) · LinkedIn: [linkedin.com/in/keller-marcus](https://linkedin.com/in/keller-marcus)
 
-To start a local development server, run:
+## Stack
 
-```bash
-ng serve
-```
+- **Angular 22** — standalone components, signals (`signal`, `computed`, `inject`)
+- **Tailwind CSS 4** — CSS-first config, sem `tailwind.config.js`
+- **TypeScript**
+- **lucide-angular** — ícones
+- **Vitest** — testes unitários
+- **ESLint + Prettier** — lint e formatação
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Funcionalidades
 
-## Code scaffolding
+- Tema claro/escuro com persistência em `localStorage`
+- Tradução PT/EN completa (conteúdo e `<html lang>` dinâmico)
+- Seções: Hero, Sobre, Skills, Projetos, Experiência, Formação, Contato
+- Preview de imagens dos projetos com lightbox (clique para expandir)
+- Scroll-spy na navbar (destaca a seção atual)
+- Animações: contagem numérica no Hero, tilt 3D nos cards de projeto, glow no cursor, reveal ao rolar a página, título de seção com barra animada
+- Navegação por âncora sem alterar a URL (`scrollIntoView` interceptado por diretiva)
+- Imagens otimizadas com `NgOptimizedImage` (lazy-loading e `priority` na imagem do Hero)
+- SEO: meta tags, Open Graph, Twitter Card, JSON-LD (`Person`), `robots.txt`
+- Responsivo (mobile-first)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Estrutura
 
-```bash
-ng generate component component-name
-```
+Cada seção vive em sua própria pasta feature (`src/app/components/<secao>/`), com `.ts`, `.html` e `.data.ts` (conteúdo + tipos) colocados juntos. `src/app/shared/` reúne apenas código usado por 2+ features: serviços (tema, idioma, seção ativa, lightbox), diretivas e componentes genéricos (ícones de marca, menu de configurações).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Rodando o projeto
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Instalar dependências:
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+Servidor de desenvolvimento (`http://localhost:4200`):
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Build de produção (saída em `dist/`):
 
-## Additional Resources
+```bash
+npm run build
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Testes unitários (Vitest):
+
+```bash
+npm run test
+```
+
+Lint:
+
+```bash
+npm run lint
+```

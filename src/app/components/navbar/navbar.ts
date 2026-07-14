@@ -1,10 +1,10 @@
 import { Component, computed, inject, signal } from '@angular/core';
-import { Code2, LucideAngularModule, Menu, X } from 'lucide-angular';
+import { CodeXml, LucideAngularModule, Menu, X } from 'lucide-angular';
 import { navLinksFor } from './nav-links.data';
-import { LanguageService } from '../../shared/utils/language.service';
-import { ActiveSectionService } from '../../shared/utils/active-section.service';
+import { LanguageService } from '../../shared/services/language.service';
+import { ActiveSectionService } from '../../shared/services/active-section.service';
 import { SettingsMenu } from '../../shared/settings-menu/settings-menu';
-import { SmoothScrollDirective } from '../../shared/utils/smooth-scroll.directive';
+import { SmoothScrollDirective } from '../../shared/directives/smooth-scroll.directive';
 
 @Component({
   selector: 'app-navbar',
@@ -18,7 +18,7 @@ export class Navbar {
   protected readonly navLinks = computed(() => navLinksFor(this.language.lang()));
   protected readonly isMenuOpen = signal(false);
 
-  protected readonly LogoIcon = Code2;
+  protected readonly LogoIcon = CodeXml;
   protected readonly MenuIcon = Menu;
   protected readonly XIcon = X;
 

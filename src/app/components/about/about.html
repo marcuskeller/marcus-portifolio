@@ -1,0 +1,35 @@
+<section id="sobre" class="section-seam py-24 px-6 bg-white dark:bg-[#0f172a]">
+  <div appScrollReveal class="max-w-3xl mx-auto">
+    <h2
+      appTitleReveal
+      class="section-title w-fit mx-auto mb-10 text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent"
+    >
+      {{ text().title }}
+    </h2>
+    <div class="space-y-5">
+      @for (paragraph of text().bio; track paragraph) {
+        <p class="text-base md:text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+          {{ paragraph }}
+        </p>
+      }
+    </div>
+
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+      <span
+        class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 dark:text-slate-400"
+      >
+        <lucide-angular [img]="LanguagesIcon" [size]="16" />
+        {{ text().languagesTitle }}:
+      </span>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        @for (item of text().languages; track item.name) {
+          <span
+            class="px-3 py-1.5 rounded-full text-sm font-medium text-slate-700 dark:text-slate-200 bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-slate-700"
+          >
+            {{ item.name }} — {{ item.level }}
+          </span>
+        }
+      </div>
+    </div>
+  </div>
+</section>

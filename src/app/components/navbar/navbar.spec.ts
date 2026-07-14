@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { Navbar } from './navbar';
-import { ActiveSectionService } from '../../shared/utils/active-section.service';
+import { ActiveSectionService } from '../../shared/services/active-section.service';
 
 describe('Navbar', () => {
   beforeEach(() => {
