@@ -24,7 +24,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.bio.3" datatype="html">
-        <source> Tenho compromisso com qualidade e longevidade de código: aplico SOLID, DRY, KISS, Clean Code, Clean Architecture e DDD no dia a dia, escrevo testes com JUnit, Mockito e Jest, e uso Docker e CI/CD para deploy em nuvem na AWS. Trabalho com Scrum/Kanban e mantenho fluxo organizado mesmo em contexto remoto. </source>
+        <source> Tenho compromisso com qualidade e longevidade de código: aplico SOLID, DRY, KISS, Clean Code, Clean Architecture e DDD no dia a dia, escrevo testes com JUnit, Mockito e Jest, e uso Docker e CI/CD para deploy em nuvem na AWS. Trabalho com Scrum/Kanban e mantenho fluxo organizado mesmo em contexto remoto. Incorporo ferramentas de IA ao fluxo de trabalho para acelerar prototipagem e tarefas repetitivas, sempre revisando e validando cada entrega com o mesmo rigor técnico. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.html</context>
           <context context-type="linenumber">32,35</context>

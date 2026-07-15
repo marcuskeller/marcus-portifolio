@@ -1,5 +1,10 @@
 export type SkillCategory =
-  'Backend' | 'Frontend' | 'Cloud & DevOps' | 'Práticas & Arquitetura' | 'Ferramentas';
+  | 'Backend'
+  | 'Frontend'
+  | 'Cloud & DevOps'
+  | 'Práticas & Arquitetura'
+  | 'Testes'
+  | 'Ferramentas';
 
 export interface Skill {
   readonly name: string;
@@ -11,6 +16,7 @@ const CATEGORY_LABELS: Record<SkillCategory, string> = {
   Frontend: $localize`:@@skills.category.frontend:Frontend`,
   'Cloud & DevOps': $localize`:@@skills.category.cloudDevops:Cloud & DevOps`,
   'Práticas & Arquitetura': $localize`:@@skills.category.practices:Práticas & Arquitetura`,
+  Testes: $localize`:@@skills.category.testing:Testes`,
   Ferramentas: $localize`:@@skills.category.tools:Ferramentas`,
 };
 
@@ -39,8 +45,10 @@ export const SKILLS: readonly Skill[] = [
   { name: 'AWS SQS', category: 'Cloud & DevOps' },
   { name: 'AWS SES', category: 'Cloud & DevOps' },
   { name: 'AWS IAM', category: 'Cloud & DevOps' },
-  { name: 'CI/CD', category: 'Cloud & DevOps' },
+  { name: 'Azure Pipelines', category: 'Cloud & DevOps' },
   { name: 'SOLID', category: 'Práticas & Arquitetura' },
+  { name: 'DRY', category: 'Práticas & Arquitetura' },
+  { name: 'KISS', category: 'Práticas & Arquitetura' },
   { name: 'DDD', category: 'Práticas & Arquitetura' },
   { name: 'Clean Architecture', category: 'Práticas & Arquitetura' },
   { name: 'Clean Code', category: 'Práticas & Arquitetura' },
@@ -48,9 +56,16 @@ export const SKILLS: readonly Skill[] = [
   { name: 'TDD', category: 'Práticas & Arquitetura' },
   { name: 'Scrum', category: 'Práticas & Arquitetura' },
   { name: 'Kanban', category: 'Práticas & Arquitetura' },
-  { name: 'Jest', category: 'Ferramentas' },
-  { name: 'JUnit', category: 'Ferramentas' },
-  { name: 'Mockito', category: 'Ferramentas' },
+  { name: 'Jest', category: 'Testes' },
+  { name: 'JUnit', category: 'Testes' },
+  { name: 'Mockito', category: 'Testes' },
   { name: 'Git', category: 'Ferramentas' },
+  { name: 'GitHub', category: 'Ferramentas' },
+  { name: 'GitHub Projects', category: 'Ferramentas' },
   { name: 'Azure DevOps', category: 'Ferramentas' },
+  { name: 'ClickUp', category: 'Ferramentas' },
+  { name: 'Claude', category: 'Ferramentas' },
+  { name: 'GitHub Copilot', category: 'Ferramentas' },
+  { name: 'Gemini', category: 'Ferramentas' },
+  { name: 'OpenCode', category: 'Ferramentas' },
 ] as const;

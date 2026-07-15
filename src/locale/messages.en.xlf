@@ -35,8 +35,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.bio.3" datatype="html">
-        <source>Tenho compromisso com qualidade e longevidade de código: aplico SOLID, DRY, KISS, Clean Code, Clean Architecture e DDD no dia a dia, escrevo testes com JUnit, Mockito e Jest, e uso Docker e CI/CD para deploy em nuvem na AWS. Trabalho com Scrum/Kanban e mantenho fluxo organizado mesmo em contexto remoto.</source>
-        <target>I care about code quality and longevity: I apply SOLID, DRY, KISS, Clean Code, Clean Architecture and DDD in my day-to-day work, write tests with JUnit, Mockito and Jest, and use Docker and CI/CD for cloud deployment on AWS. I work with Scrum/Kanban and keep an organized workflow even in a remote context.</target>
+        <source>Tenho compromisso com qualidade e longevidade de código: aplico SOLID, DRY, KISS, Clean Code, Clean Architecture e DDD no dia a dia, escrevo testes com JUnit, Mockito e Jest, e uso Docker e CI/CD para deploy em nuvem na AWS. Trabalho com Scrum/Kanban e mantenho fluxo organizado mesmo em contexto remoto. Incorporo ferramentas de IA ao fluxo de trabalho para acelerar prototipagem e tarefas repetitivas, sempre revisando e validando cada entrega com o mesmo rigor técnico.</source>
+        <target>I care about code quality and longevity: I apply SOLID, DRY, KISS, Clean Code, Clean Architecture and DDD in my day-to-day work, write tests with JUnit, Mockito and Jest, and use Docker and CI/CD for cloud deployment on AWS. I work with Scrum/Kanban and keep an organized workflow even in a remote context. I bring AI tools into my workflow to speed up prototyping and repetitive tasks, always reviewing and validating every delivery with the same technical rigor.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.ts</context>
           <context context-type="linenumber">14</context>
@@ -646,6 +646,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/skills/skills.data.ts</context>
           <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills.category.testing" datatype="html">
+        <source>Testes</source>
+        <target>Testing</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/skills/skills.data.ts</context>
         </context-group>
       </trans-unit>
       <trans-unit id="skills.category.tools" datatype="html">

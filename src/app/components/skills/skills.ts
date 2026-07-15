@@ -14,6 +14,7 @@ const CATEGORIES: readonly SkillCategory[] = [
   'Frontend',
   'Cloud & DevOps',
   'Práticas & Arquitetura',
+  'Testes',
   'Ferramentas',
 ];
 
