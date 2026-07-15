@@ -24,7 +24,7 @@ export const PROJECTS: readonly Project[] = [
   {
     name: 'AWS Image Pipeline',
     image: 'aws-pipeline.png',
-    period: $localize`:@@projects.awsPipeline.period:Mai 2026 – Jul 2026`,
+    period: $localize`:@@projects.awsPipeline.period:Mai 2026`,
     description: $localize`:@@projects.awsPipeline.description:Pipeline escalável para upload, processamento e entrega de imagens, com arquitetura distribuída orientada a eventos, processamento assíncrono, design cloud-native e URLs pré-assinadas para acesso seguro a arquivos.`,
     techStack: ['Java 21', 'AWS Lambda', 'AWS S3', 'AWS SQS', 'AWS EC2', 'AWS SES', 'AWS IAM'],
     githubUrl: 'https://github.com/marcuskeller/aws-image-pipeline',
@@ -55,7 +55,7 @@ export const PROJECTS: readonly Project[] = [
   {
     name: 'InvestApp',
     company: 'Keller Tecnologia',
-    period: $localize`:@@projects.investapp.period:Ago 2024 – Jul 2025`,
+    period: $localize`:@@projects.investapp.period:Jan 2025 – Jun 2025`,
     description: $localize`:@@projects.investapp.description:Sistema para gerenciamento e análise de portfólios de investimentos, com acompanhamento de dados financeiros, geração de relatórios e integração com APIs externas.`,
     techStack: [
       'Java',

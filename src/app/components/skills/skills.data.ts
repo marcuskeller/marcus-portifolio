@@ -46,6 +46,8 @@ export const SKILLS: readonly Skill[] = [
   { name: 'AWS SES', category: 'Cloud & DevOps' },
   { name: 'AWS IAM', category: 'Cloud & DevOps' },
   { name: 'Azure Pipelines', category: 'Cloud & DevOps' },
+  { name: 'GitHub Actions', category: 'Cloud & DevOps' },
+  { name: 'CI/CD', category: 'Práticas & Arquitetura' },
   { name: 'SOLID', category: 'Práticas & Arquitetura' },
   { name: 'DRY', category: 'Práticas & Arquitetura' },
   { name: 'KISS', category: 'Práticas & Arquitetura' },

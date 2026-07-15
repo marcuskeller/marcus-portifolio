@@ -2,7 +2,7 @@ import { Experience as ExperienceItem } from '../../shared/models/experience.mod
 
 export const EXPERIENCES: readonly ExperienceItem[] = [
   {
-    role: $localize`:@@experience.kellerJunior.role:Desenvolvedor de Software Júnior — Full Stack`,
+    role: $localize`:@@experience.kellerJunior.role:Desenvolvedor de Software Júnior - Full Stack`,
     organization: 'Keller Tecnologia',
     location: $localize`:@@experience.kellerJunior.location:Joinville, SC · Presencial`,
     startDate: $localize`:@@experience.kellerJunior.startDate:Jul 2025`,
@@ -18,7 +18,7 @@ export const EXPERIENCES: readonly ExperienceItem[] = [
     ],
   },
   {
-    role: $localize`:@@experience.kellerIntern.role:Desenvolvedor de Software — Estágio Full Stack`,
+    role: $localize`:@@experience.kellerIntern.role:Desenvolvedor de Software - Estágio Full Stack`,
     organization: 'Keller Tecnologia',
     location: $localize`:@@experience.kellerIntern.location:Joinville, SC · Presencial`,
     startDate: $localize`:@@experience.kellerIntern.startDate:Ago 2024`,

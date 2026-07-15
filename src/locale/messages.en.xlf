@@ -19,16 +19,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="about.bio.1" datatype="html">
-        <source>Desenvolvedor Full Stack focado em construir produtos digitais completos, eficientes e escaláveis — do banco de dados à interface, sempre alinhando entrega técnica aos objetivos de negócio. Atualmente em transição de júnior para pleno, cursando Tecnólogo em Análise e Desenvolvimento de Sistemas na UniSENAI.</source>
-        <target>Full Stack Developer focused on building complete, efficient and scalable digital products — from the database to the interface, always aligning technical delivery with business goals. Currently transitioning from junior to mid-level, pursuing a degree in Systems Analysis and Development at UniSENAI.</target>
+        <source>Desenvolvedor Full Stack focado em construir produtos digitais completos, eficientes e escaláveis, do banco de dados à interface, sempre alinhando entrega técnica aos objetivos de negócio. Tenho experiência prática na criação de um SaaS do zero, do modelo de negócio à arquitetura de produção. Sigo me aperfeiçoando continuamente, cursando Tecnólogo em Análise e Desenvolvimento de Sistemas na UniSENAI.</source>
+        <target>Full Stack Developer focused on building complete, efficient and scalable digital products, from the database to the interface, always aligning technical delivery with business goals. I have hands-on experience building a SaaS from the ground up, from the business model to the production architecture. I keep sharpening my skills continuously, currently pursuing a degree in Systems Analysis and Development at UniSENAI.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="about.bio.2" datatype="html">
-        <source>Construo APIs RESTful com o ecossistema Java, Kotlin e Spring Boot, modelo bancos relacionais (PostgreSQL e MySQL) com foco em performance, e desenvolvo interfaces com Angular e Tailwind CSS — entregando funcionalidades de ponta a ponta.</source>
-        <target>I build RESTful APIs with the Java, Kotlin and Spring Boot ecosystem, model relational databases (PostgreSQL and MySQL) with a focus on performance, and develop interfaces with Angular and Tailwind CSS — delivering end-to-end features.</target>
+        <source>Construo APIs RESTful com o ecossistema Java, Kotlin e Spring Boot, modelo bancos relacionais (PostgreSQL e MySQL) com foco em performance, e desenvolvo interfaces com Angular e Tailwind CSS, entregando funcionalidades de ponta a ponta.</source>
+        <target>I build RESTful APIs with the Java, Kotlin and Spring Boot ecosystem, model relational databases (PostgreSQL and MySQL) with a focus on performance, and develop interfaces with Angular and Tailwind CSS, delivering end-to-end features.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.ts</context>
           <context context-type="linenumber">13</context>
@@ -233,8 +233,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experience.kellerJunior.role" datatype="html">
-        <source>Desenvolvedor de Software Júnior — Full Stack</source>
-        <target>Junior Software Developer — Full Stack</target>
+        <source>Desenvolvedor de Software Júnior - Full Stack</source>
+        <target>Junior Software Developer - Full Stack</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/experience/experience.ts</context>
           <context context-type="linenumber">9</context>
@@ -297,8 +297,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="experience.kellerIntern.role" datatype="html">
-        <source>Desenvolvedor de Software — Estágio Full Stack</source>
-        <target>Software Developer — Full Stack Intern</target>
+        <source>Desenvolvedor de Software - Estágio Full Stack</source>
+        <target>Software Developer - Full Stack Intern</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/experience/experience.ts</context>
           <context context-type="linenumber">25</context>
