@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BackToTop } from './shared/back-to-top/back-to-top';
 import { CursorGlow } from './shared/effects/cursor-glow';
 import { Lightbox } from './shared/lightbox/lightbox';
 import { Navbar } from './components/navbar/navbar';
@@ -25,6 +26,7 @@ import { Footer } from './components/footer/footer';
     Education,
     Contact,
     Footer,
+    BackToTop,
   ],
   templateUrl: './app.html',
 })

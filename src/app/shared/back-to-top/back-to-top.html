@@ -1,0 +1,11 @@
+@if (visible()) {
+  <button
+    type="button"
+    (click)="scrollToTop()"
+    i18n-aria-label="@@backToTop.ariaLabel"
+    aria-label="Voltar ao topo"
+    class="fixed bottom-6 right-6 z-50 grid place-items-center size-11 rounded-full text-white bg-linear-to-br from-indigo-500 to-purple-500 shadow-lg hover:shadow-[0_0_35px_rgba(99,102,241,0.4)] hover:-translate-y-1 transition-all"
+  >
+    <lucide-angular [img]="ArrowUpIcon" [size]="20"></lucide-angular>
+  </button>
+}
