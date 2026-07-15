@@ -68,8 +68,8 @@
       <trans-unit id="contact.whatsappMessage" datatype="html">
         <source>Olá, Marcus! Vi seu portfólio e gostaria de falar com você.</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/contact/social-links.data.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="sourcefile">src/app/components/contact/contact.ts</context>
+          <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="education.unisenai.role" datatype="html">
@@ -600,6 +600,27 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/settings-menu/settings-menu.html</context>
           <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settingsMenu.languageLabel" datatype="html">
+        <source> Idioma </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/settings-menu/settings-menu.html</context>
+          <context context-type="linenumber">28,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settingsMenu.switchToEn" datatype="html">
+        <source>Mudar para inglês</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/settings-menu/settings-menu.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settingsMenu.switchToPt" datatype="html">
+        <source>Mudar para português</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/settings-menu/settings-menu.html</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="themeToggle.ariaLabel" datatype="html">

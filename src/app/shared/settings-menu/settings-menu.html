@@ -20,6 +20,47 @@
         </span>
         <app-theme-toggle />
       </div>
+      <div class="flex items-center justify-between gap-3">
+        <span
+          class="text-sm text-slate-600 dark:text-slate-300"
+          i18n="@@settingsMenu.languageLabel"
+        >
+          Idioma
+        </span>
+        <div
+          class="inline-flex h-7 items-center rounded-full border border-slate-300 dark:border-slate-700 bg-slate-200 dark:bg-slate-800 p-0.5 text-[11px] font-bold tracking-wide"
+        >
+          @if (isPt) {
+            <span
+              class="flex h-6 items-center justify-center rounded-full px-2.5 bg-indigo-500 text-white"
+            >
+              PT
+            </span>
+            <a
+              [href]="switchUrl"
+              i18n-aria-label="@@settingsMenu.switchToEn"
+              aria-label="Mudar para inglês"
+              class="flex h-6 items-center justify-center rounded-full px-2.5 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors"
+            >
+              EN
+            </a>
+          } @else {
+            <a
+              [href]="switchUrl"
+              i18n-aria-label="@@settingsMenu.switchToPt"
+              aria-label="Mudar para português"
+              class="flex h-6 items-center justify-center rounded-full px-2.5 text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors"
+            >
+              PT
+            </a>
+            <span
+              class="flex h-6 items-center justify-center rounded-full px-2.5 bg-indigo-500 text-white"
+            >
+              EN
+            </span>
+          }
+        </div>
+      </div>
     </div>
   }
 </div>

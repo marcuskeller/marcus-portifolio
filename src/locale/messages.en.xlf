@@ -672,6 +672,27 @@
           <context context-type="linenumber">19,21</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="settingsMenu.languageLabel" datatype="html">
+        <source> Idioma </source>
+        <target> Language </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/settings-menu/settings-menu.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settingsMenu.switchToEn" datatype="html">
+        <source>Mudar para inglês</source>
+        <target>Switch to English</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/settings-menu/settings-menu.html</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settingsMenu.switchToPt" datatype="html">
+        <source>Mudar para português</source>
+        <target>Switch to Portuguese</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/settings-menu/settings-menu.html</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="themeToggle.ariaLabel" datatype="html">
         <source>Alternar tema</source>
         <target>Toggle theme</target>

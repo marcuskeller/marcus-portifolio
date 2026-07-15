@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/marcus-portifolio/browser",
+  "redirects": [{ "source": "/", "destination": "/pt/", "permanent": false }],
+  "rewrites": [
+    { "source": "/pt", "destination": "/pt/index.html" },
+    { "source": "/en", "destination": "/en/index.html" }
+  ]
+}

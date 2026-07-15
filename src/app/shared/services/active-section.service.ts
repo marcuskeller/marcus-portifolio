@@ -21,7 +21,8 @@ export class ActiveSectionService {
   }
 
   private updateActiveSection(): void {
-    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    const atBottom =
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
     if (atBottom) {
       this.activeId.set(this.sections[this.sections.length - 1].id);
       return;
